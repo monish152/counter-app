@@ -1,11 +1,11 @@
 version: "3.5"
 services:
-  web-fe:
+  web-frontend:
     build: .
     command: python app.py
     ports:
-      - target: 5000
-        published: 5000
+      - target: 8888
+        published: 8888
     networks:
       - counter-net
     volumes:
